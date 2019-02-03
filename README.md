@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/marvel-nccr/ansible-role-ansible-prerequisites.svg?branch=master)](https://travis-ci.org/marvel-nccr/ansible-role-ansible-prerequisites)
 
-# Ansible Role: marvel-nccr.ansible-prerequisites
+# Ansible Role: marvel-nccr.ansible_prerequisites
 
 Install prerequisites for running ansible on Ubuntu.
 
 ## Installation
 
-`ansible-galaxy install marvel-nccr.ansible-prerequisites`
+`ansible-galaxy install marvel-nccr.ansible_prerequisites`
 
 ## Role Variables
 
@@ -16,10 +16,12 @@ See `defaults/main.yml`
 
 Note: Set `gather_facts: no` when running this role.
 
+```
   - hosts: servers
     gather_facts: no
     roles:
-    - role: marvel-nccr.ansible-prerequisites
+    - role: marvel-nccr.ansible_prerequisites
+```
 
 ## License
 
