@@ -23,6 +23,20 @@ provisioner:
     converge: playbook.yml
 scenario:
   name: default
+  test_sequence:
+    - lint
+    - destroy
+    - dependency
+    - syntax
+    - create
+    - prepare
+    - converge
+    # - idempotence
+    - side_effect
+    - verify
+    - cleanup
+    - destroy
+
 verifier:
   name: testinfra
   lint:
